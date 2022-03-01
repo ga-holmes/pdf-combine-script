@@ -69,6 +69,7 @@ def main():
             if check_extension(pdf) == 'pdf':
                 try:
                     merger.append(pdf)
+                    print(f'\tMerged: {pdf}')
                 except:
                     print(f'Error occured with \'{pdf}\', skipping')
         
